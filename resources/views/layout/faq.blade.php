@@ -1,4 +1,4 @@
-<section id="faq" class="faq section">
+<section id="solutions" class="faq section ">
 
     <!-- Section Title -->
     <div class="container section-title" data-aos="fade-up">
