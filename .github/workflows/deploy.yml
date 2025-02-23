@@ -15,6 +15,7 @@ jobs:
 
       - name: suprimer les fichier index et htaccess à la racine
         run: |
+          cd /var/www/html/innov360
           rm -f index.php
           rm -f .htaccess
 
