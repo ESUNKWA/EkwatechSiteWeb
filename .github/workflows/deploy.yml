@@ -13,15 +13,6 @@ jobs:
       - name: 🚀 Cloner le dépôt
         uses: actions/checkout@v4
 
-      - name: suprimer les fichier index et htaccess à la racine
-        run: |
-          ssh -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }} << 'EOF'
-          cd /var/www/html/innov360
-          sudo chown -R www-data:www-data /var/www/html/innov360
-          sudo chmod -R 755 /var/www/html/innov360
-          rm -f index.php
-          rm -f .htaccess
-
       - name: 🔑 Configurer l'accès SSH
         run: |
           mkdir -p ~/.ssh
@@ -31,6 +22,15 @@ jobs:
 
       - name: 🔑 Tester la connexion SSH
         run: ssh -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }} "echo 'Connexion réussie !'"
+
+      - name: suprimer les fichier index et htaccess à la racine
+        run: |
+          ssh -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }} << 'EOF'
+            cd /var/www/html/innov360
+            sudo chown -R www-data:www-data /var/www/html/innov360
+            sudo chmod -R 755 /var/www/html/innov360
+            rm -f index.php
+            rm -f .htaccess
 
       - name: 📂 Déployer l'application Laravel
         run: |
