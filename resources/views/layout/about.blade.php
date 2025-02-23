@@ -11,7 +11,7 @@
 
         <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
 
-          <div class="faq-container">
+          <div class="faq-container text-center">
             <p>
                 La croissance de votre entreprise dépend inévitablement de l'utilisation d'outils informatiques.
                 <br><br>
