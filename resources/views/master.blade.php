@@ -63,6 +63,10 @@
     {{-- @include('layout.featured-services') --}}
     <!-- /Featured Services Section -->
 
+     <!-- Services Section -->
+     @include('layout.about')
+     <!-- /Services Section -->
+
     <!-- Services Section -->
     @include('layout.services')
     <!-- /Services Section -->

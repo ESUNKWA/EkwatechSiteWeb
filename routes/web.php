@@ -14,7 +14,7 @@ use App\Http\Controllers\JasperController;
 |
 */
 
-Route::get('/master', function () {
+Route::get('/', function () {
     return view('master');
 });
 
