@@ -14,36 +14,44 @@
           <div class="faq-container">
 
             <div class="faq-item faq-active">
-              <h3><i class="bi bi-activity icon"></i>&nbsp;Logiciels et solutions logicielles</h3>
+              <h3><i class="bi bi-folder-fill icon"></i>&nbsp;Application de Gestion Electronique de document</h3>
               <div class="faq-content">
                 <p>
-                  La croissance de votre entreprise dépend inévitablement de l'utilisation d'outils informatiques.
-                  <br><br>
-                  IT Solutions vous offre des logiciels puissants et sur mesure.
+                    Notre Application de Gestion Électronique de Documents (GED) est une solution complète pour l'organisation,
+                    la gestion et la consultation des documents au sein de votre entreprise. Grâce à une interface intuitive et à des fonctionnalités avancées,
+                    notre GED facilite la centralisation de tous vos fichiers numériques. Elle vous permet de gérer l'accès,
+                    le partage et l'archivage des documents tout en garantissant la conformité aux normes de sécurité.
+                    Simplifiez votre gestion documentaire, réduisez le papier et boostez l'efficacité de votre équipe."
 
-                  Que ce soit pour la gestion de votre comptabilité, de vos encaissements ou de votre facturation, nous disposons de solutions adaptées à chacun de vos besoins.
-
-                    Choisissez IT Solutions pour digitaliser vos processus avec efficacité !
+                    Cela reflète une solution efficace et moderne pour la gestion documentaire.
                 </p>
               </div>
               <i class="faq-toggle bi bi-chevron-right"></i>
             </div><!-- End Faq item-->
 
             <div class="faq-item ">
-                <h3><i class="bi bi-activity icon"></i>&nbsp;Logiciels et solutions logicielles</h3>
+                <h3><i class="bi bi-graph-up-arrow icon"></i>&nbsp;Application Gestion de stock</h3>
                 <div class="faq-content">
-                  <p>
-                    La croissance de votre entreprise dépend inévitablement de l'utilisation d'outils informatiques.
-                    <br><br>
-                    IT Solutions vous offre des logiciels puissants et sur mesure.
-
-                    Que ce soit pour la gestion de votre comptabilité, de vos encaissements ou de votre facturation, nous disposons de solutions adaptées à chacun de vos besoins.
-
-                      Choisissez IT Solutions pour digitaliser vos processus avec efficacité !
-                  </p>
+                    Notre application de gestion de stock est une solution complète pour gérer efficacement vos inventaires et assurer un suivi précis de vos produits.
+                    Conçue pour les entreprises de toutes tailles, elle vous permet de suivre en temps réel vos entrées et sorties de stocks,
+                    de gérer vos fournisseurs et vos commandes, et de générer des rapports détaillés pour une prise de décision éclairée.
+                    L'interface conviviale et intuitive simplifie la gestion des stocks, réduisant ainsi les erreurs et augmentant la productivité.
+                    Grâce à une vue centralisée, vous pouvez facilement garder le contrôle sur vos niveaux de stock, améliorer vos processus logistiques et
+                    garantir la disponibilité des produits au moment voulu
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
+            </div><!-- End Faq item-->
+
+            <div class="faq-item ">
+                <h3><i class="bi bi-chat-right-text-fill"></i>&nbsp;Application d'envoi des sms</h3>
+                <div class="faq-content">
+                    Notre application d'envoi de SMS vous permet d'envoyer des messages instantanés à un large public de manière simple et efficace.
+                    Que ce soit pour des alertes, des notifications, ou des campagnes de marketing, notre plateforme offre une solution flexible
+                    et sécurisée pour atteindre vos destinataires, avec des options de personnalisation et un suivi détaillé des envois.
+                    Facile à utiliser, elle est idéale pour les entreprises de toutes tailles cherchant à optimiser leur communication par SMS
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+            </div><!-- End Faq item-->
 
           </div>
 
