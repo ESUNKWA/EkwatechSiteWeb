@@ -32,12 +32,12 @@
             <div class="faq-item ">
                 <h3><i class="bi bi-graph-up-arrow icon"></i>&nbsp;Application Gestion de stock</h3>
                 <div class="faq-content">
-                    Notre application de gestion de stock est une solution complète pour gérer efficacement vos inventaires et assurer un suivi précis de vos produits.
-                    Conçue pour les entreprises de toutes tailles, elle vous permet de suivre en temps réel vos entrées et sorties de stocks,
-                    de gérer vos fournisseurs et vos commandes, et de générer des rapports détaillés pour une prise de décision éclairée.
-                    L'interface conviviale et intuitive simplifie la gestion des stocks, réduisant ainsi les erreurs et augmentant la productivité.
-                    Grâce à une vue centralisée, vous pouvez facilement garder le contrôle sur vos niveaux de stock, améliorer vos processus logistiques et
-                    garantir la disponibilité des produits au moment voulu
+                    <p>Notre application de gestion de stock est une solution complète pour gérer efficacement vos inventaires et assurer un suivi précis de vos produits.
+                        Conçue pour les entreprises de toutes tailles, elle vous permet de suivre en temps réel vos entrées et sorties de stocks,
+                        de gérer vos fournisseurs et vos commandes, et de générer des rapports détaillés pour une prise de décision éclairée.
+                        L'interface conviviale et intuitive simplifie la gestion des stocks, réduisant ainsi les erreurs et augmentant la productivité.
+                        Grâce à une vue centralisée, vous pouvez facilement garder le contrôle sur vos niveaux de stock, améliorer vos processus logistiques et
+                        garantir la disponibilité des produits au moment voulu</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
             </div><!-- End Faq item-->
@@ -45,10 +45,12 @@
             <div class="faq-item ">
                 <h3><i class="bi bi-chat-right-text-fill"></i>&nbsp;Application d'envoi des sms</h3>
                 <div class="faq-content">
-                    Notre application d'envoi de SMS vous permet d'envoyer des messages instantanés à un large public de manière simple et efficace.
+                    <p>
+                        Notre application d'envoi de SMS vous permet d'envoyer des messages instantanés à un large public de manière simple et efficace.
                     Que ce soit pour des alertes, des notifications, ou des campagnes de marketing, notre plateforme offre une solution flexible
                     et sécurisée pour atteindre vos destinataires, avec des options de personnalisation et un suivi détaillé des envois.
                     Facile à utiliser, elle est idéale pour les entreprises de toutes tailles cherchant à optimiser leur communication par SMS
+                    </p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
             </div><!-- End Faq item-->
