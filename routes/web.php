@@ -14,8 +14,9 @@ use App\Http\Controllers\JasperController;
 |
 */
 
-Route::get('/accueil', function () {
+Route::get('/', function () {
     return view('master');
 });
+
 
 Route::get('generate_report', [JasperController::class, 'generateReportTable']);
