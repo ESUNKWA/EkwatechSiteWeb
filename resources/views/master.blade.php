@@ -4,12 +4,12 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>IT-Solutions +</title>
+  <title>{{ config('app.name') }}</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
   <!-- Favicons -->
-  <link href="{{asset('assets/img/favicon.png') }}" rel="icon">
+  <link href="{{asset('assets/img/logo-transparent.png') }}" rel="icon">
   <link href="{{asset('assets/img/apple-touch-icon.png') }}" rel="apple-touch-icon">
 
   <!-- Fonts -->
@@ -49,9 +49,9 @@
       </div>
       <div class="container text-center">
         <div class="d-flex flex-column justify-content-center align-items-center">
-          <h1 data-aos="fade-up">Bienvenue sur <span>Ekwatech</span></h1>
+          <h1 data-aos="fade-up">Bienvenue sur <span style="color: #f85858;" >{{ config('app.name') }}        </span></h1>
           <p data-aos="fade-up" data-aos-delay="100">Votre partenaire digital<br></p>
-          <h4 class="w-bold mb-4"><span class="text-primary">IT Business </span> Solution</h4>
+          <h4 class="w-bold mb-4"><span class="text-primary">IT Business </span> Solutions</h4>
           <img src="{{asset('assets/img/') }}" class="img-fluid hero-img"
            alt="" data-aos="zoom-out" data-aos-delay="300" style="height: 410px;" >
         </div>

@@ -29,7 +29,7 @@
           <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="400">
             <i class="bi bi-envelope"></i>
             <h3>Envoyez-nous un courriel</h3>
-            <p>kouadiodeki@gmail.com</p>
+            <p>contact@ekwatech.com</p>
           </div>
         </div><!-- End Info Item -->
 
