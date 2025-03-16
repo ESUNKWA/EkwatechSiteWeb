@@ -17,13 +17,10 @@
               <h3><i class="bi bi-folder-fill icon"></i>&nbsp;Application de Gestion Electronique de document</h3>
               <div class="faq-content">
                 <p>
-                    Notre Application de Gestion Électronique de Documents (GED) est une solution complète pour l'organisation,
-                    la gestion et la consultation des documents au sein de votre entreprise. Grâce à une interface intuitive et à des fonctionnalités avancées,
-                    notre GED facilite la centralisation de tous vos fichiers numériques. Elle vous permet de gérer l'accès,
-                    le partage et l'archivage des documents tout en garantissant la conformité aux normes de sécurité.
-                    Simplifiez votre gestion documentaire, réduisez le papier et boostez l'efficacité de votre équipe."
-
-                    Cela reflète une solution efficace et moderne pour la gestion documentaire.
+                    Notre application GED centralise, organise et sécurise vos documents d’entreprise.
+                    Avec une interface intuitive et des fonctionnalités avancées, elle facilite l’accès,
+                    le partage et l’archivage, tout en assurant la conformité et en améliorant l’efficacité
+                    de votre équipe.
                 </p>
               </div>
               <i class="faq-toggle bi bi-chevron-right"></i>
