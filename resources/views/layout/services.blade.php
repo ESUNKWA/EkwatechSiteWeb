@@ -10,17 +10,6 @@
 
       <div class="row g-5">
 
-        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-          <div class="service-item item-cyan position-relative">
-            <i class="bi bi-activity icon"></i>
-            <div>
-              <h3>Consultation en transformation numérique</h3>
-              <p>Aider les entreprises à adopter de nouvelles technologies pour améliorer leur efficacité et rester compétitives.</p>
-              <a hidden href="#" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-        </div><!-- End Service Item -->
-
         <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
           <div class="service-item item-orange position-relative">
             <i class="bi bi-broadcast icon"></i>
@@ -53,6 +42,17 @@
             </div>
           </div>
         </div><!-- End Service Item -->
+
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+          <div class="service-item item-red position-relative">
+            <i class="bi bi-envelope-at icon"></i>
+            <div>
+              <h3>Email professionnel</h3>
+              <p>Aider les entreprises à développer leur présence en ligne et à maximiser leur impact numérique.</p>
+              <a hidden href="#" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
 
       </div>
 
