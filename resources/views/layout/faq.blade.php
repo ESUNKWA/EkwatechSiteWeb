@@ -41,7 +41,7 @@
                 <i class="faq-toggle bi bi-chevron-right"></i>
             </div><!-- End Faq item-->
 
-            <div class="faq-item ">
+            <div class="faq-item " hidden>
                 <h3><i class="bi bi-chat-right-text-fill"></i>&nbsp;Application d'envoi des sms</h3>
                 <div class="faq-content">
                     <p>
