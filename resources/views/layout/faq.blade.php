@@ -16,12 +16,14 @@
             <div class="faq-item faq-active">
               <h3><i class="bi bi-folder-fill icon"></i>&nbsp;Application de Gestion Electronique de document</h3>
               <div class="faq-content">
+               
                 <p>
                     Notre application GED centralise, organise et sécurise vos documents d’entreprise.
                     Avec une interface intuitive et des fonctionnalités avancées, elle facilite l’accès,
                     le partage et l’archivage, tout en assurant la conformité et en améliorant l’efficacité
                     de votre équipe.
                 </p>
+                
               </div>
               <i class="faq-toggle bi bi-chevron-right"></i>
             </div><!-- End Faq item-->
@@ -47,6 +49,17 @@
                     Que ce soit pour des alertes, des notifications, ou des campagnes de marketing, notre plateforme offre une solution flexible
                     et sécurisée pour atteindre vos destinataires, avec des options de personnalisation et un suivi détaillé des envois.
                     Facile à utiliser, elle est idéale pour les entreprises de toutes tailles cherchant à optimiser leur communication par SMS
+                    </p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+            </div><!-- End Faq item-->
+
+            <div class="faq-item ">
+                <h3><i class="bi bi-activity"></i></i>&nbsp; Dolibarr : Votre solution de gestion tout-en-un</h3>
+                <div class="faq-content">
+                    <p>
+                      Dolibarr est un logiciel ERP & CRM open source qui simplifie la gestion de votre entreprise. Il regroupe dans un seul outil la gestion des clients, des factures, des stocks, des ventes, des achats, des projets et bien plus encore.
+                      Accessible et facile à utiliser, Dolibarr s’adapte aux besoins des TPE, PME, associations et indépendants pour piloter leur activité en toute sérénité.    
                     </p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
