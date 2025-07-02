@@ -14,7 +14,7 @@
           <div class="faq-container">
 
             <div class="faq-item faq-active">
-              <h3><i class="bi bi-folder-fill icon"></i>&nbsp;Application de Gestion Electronique de document</h3>
+              <h3><i class="bi bi-folder-fill icon"></i>&nbsp;Smart-Doc: votre application de Gestion Electronique de document</h3>
               <div class="faq-content">
                
                 <p>
@@ -29,7 +29,7 @@
             </div><!-- End Faq item-->
 
             <div class="faq-item ">
-                <h3><i class="bi bi-graph-up-arrow icon"></i>&nbsp;Application Gestion de stock</h3>
+                <h3><i class="bi bi-graph-up-arrow icon"></i>&nbsp;Neuro-Stock: votre application Gestion de stock</h3>
                 <div class="faq-content">
                     <p>Notre application de gestion de stock est une solution complète pour gérer efficacement vos inventaires et assurer un suivi précis de vos produits.
                         Conçue pour les entreprises de toutes tailles, elle vous permet de suivre en temps réel vos entrées et sorties de stocks,
