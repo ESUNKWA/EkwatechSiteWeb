@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\JasperController;
+use App\Http\Controllers\CustomerMessageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,3 +21,4 @@ Route::get('/', function () {
 
 
 Route::get('generate_report', [JasperController::class, 'generateReportTable']);
+Route::post('/register_customer_msg', [CustomerMessageController::class, 'register_customer_msg'])->name('register_customer_msg');

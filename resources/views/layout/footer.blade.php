@@ -9,8 +9,8 @@
           <div class="footer-contact pt-3">
             <p>Abidjan, Côte d'Ivoire</p>
 
-            <p class="mt-3"><strong>Phone:</strong> <span>+225 07 59 94 71 36</span></p>
-            <p><strong>Email:</strong> <span>kouadiodeki@gmail.com</span></p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+225 07 12 09 27 83</span></p>
+            <p><strong>Email:</strong> <span>contact@ekwatech.com</span></p>
           </div>
           <div class="social-links d-flex mt-4" hidden>
             <a href=""><i class="bi bi-twitter-x"></i></a>

@@ -37,23 +37,35 @@
 
       <div class="row gy-4 mt-1">
         <div class="col-lg-12">
-          <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="400">
+
+          @if ($errors->any())
+              <div style="color:red;">
+                  <ul>
+                      @foreach ($errors->all() as $error)
+                          <li>{{ $error }}</li>
+                      @endforeach
+                  </ul>
+              </div>
+          @endif
+        
+          <form action="{{route('register_customer_msg')}}" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="400">
+            @csrf
             <div class="row gy-4">
 
               <div class="col-md-6">
-                <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                <input type="text" name="name" class="form-control" value="{{ old('name') }}" placeholder="Entrer votre nom" required="">
               </div>
 
               <div class="col-md-6 ">
-                <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                <input type="email" class="form-control" name="email" value="{{ old('email') }}" placeholder="Entrer votre adresse email" required="">
               </div>
 
               <div class="col-md-12">
-                <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                <input type="text" class="form-control" name="subject" value="{{ old('subject') }}" placeholder="Object" required="">
               </div>
 
               <div class="col-md-12">
-                <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                <textarea class="form-control" name="message" value="{{ old('message') }}" rows="6" placeholder="Message" required=""></textarea>
               </div>
 
               <div class="col-md-12 text-center">
@@ -61,7 +73,7 @@
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
 
-                <button type="submit">Send Message</button>
+                <button type="submit">Envoyer le Message</button>
               </div>
 
             </div>
