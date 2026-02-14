@@ -21,7 +21,7 @@
           <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="300">
             <i class="bi bi-telephone"></i>
             <h3>Appelez-nous</h3>
-            <p>+225 07 59 94 71 36</p>
+            <p>+225 07 12 09 27 83</p>
           </div>
         </div><!-- End Info Item -->
 
