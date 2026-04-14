@@ -19,8 +19,8 @@ pipeline {
             steps {
                 sh '''
                 docker run --rm \
-                -v ${WORKSPACE}:/app \
-                -w /app \
+                -v ${WORKSPACE}:/ \
+                -w / \
                 composer:2 \
                 composer install --no-interaction --prefer-dist --optimize-autoloader
                 '''
@@ -31,8 +31,8 @@ pipeline {
             steps {
                 sh '''
                 docker run --rm \
-                -v ${WORKSPACE}:/app \
-                -w /app \
+                -v ${WORKSPACE}:/ \
+                -w / \
                 php:8.2-cli \
                 bash -c "
                     if [ ! -f .env ]; then
