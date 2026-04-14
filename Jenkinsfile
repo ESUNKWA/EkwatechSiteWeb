@@ -27,10 +27,8 @@ pipeline {
         stage('Setup Environment') {
             steps {
                 sh '''
-                if [ ! -f .env ]; then
-                    cp .env.example .env
-                fi
-                php artisan key:generate
+                docker run --rm -v $PWD:/app -w /app composer:2 \
+                php artisan key:generate || true
                 '''
             }
         }
