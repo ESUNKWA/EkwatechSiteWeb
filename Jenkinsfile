@@ -7,12 +7,6 @@ pipeline {
 
     stages {
 
-        stage('Debug Workspace') {
-            steps {
-                sh 'ls -R'
-            }
-        }
-
         stage('Checkout') {
             steps {
                 git credentialsId: 'github-token',
@@ -24,7 +18,10 @@ pipeline {
         stage('Install Dependencies') {
             steps {
                 sh '''
-                docker run --rm -v ${WORKSPACE}:/app -w /app composer:2 \
+                docker run --rm \
+                -v ${WORKSPACE}:/app \
+                -w /app \
+                composer:2 \
                 composer install --no-interaction --prefer-dist --optimize-autoloader
                 '''
             }
@@ -33,8 +30,16 @@ pipeline {
         stage('Setup Environment') {
             steps {
                 sh '''
-                docker run --rm -v ${WORKSPACE}:/app -w /app composer:2 \
-                php artisan key:generate || true
+                docker run --rm \
+                -v ${WORKSPACE}:/app \
+                -w /app \
+                php:8.2-cli \
+                bash -c "
+                    if [ ! -f .env ]; then
+                        cp .env.example .env;
+                    fi
+                    php artisan key:generate
+                "
                 '''
             }
         }
