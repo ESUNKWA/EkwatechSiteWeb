@@ -18,7 +18,7 @@ pipeline {
         stage('Install Dependencies') {
             steps {
                 sh '''
-                docker run --rm -v $PWD:/app -w /app composer:2 \
+                docker run --rm -v ${WORKSPACE}:/app -w /app composer:2 \
                 composer install --no-interaction --prefer-dist --optimize-autoloader
                 '''
             }
@@ -27,7 +27,7 @@ pipeline {
         stage('Setup Environment') {
             steps {
                 sh '''
-                docker run --rm -v $PWD:/app -w /app composer:2 \
+                docker run --rm -v ${WORKSPACE}:/app -w /app composer:2 \
                 php artisan key:generate || true
                 '''
             }
@@ -37,7 +37,7 @@ pipeline {
             steps {
                 sshagent(['server-ssh']) {
                     sh """
-                    ssh -o StrictHostKeyChecking=no root@38.242.232.151 '
+                    ssh -o StrictHostKeyChecking=no root@ip
                         cd $APP_DIR &&
                         git pull origin main &&
                         composer install --no-interaction --prefer-dist --optimize-autoloader &&
