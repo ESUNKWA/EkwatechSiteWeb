@@ -1,5 +1,5 @@
 pipeline {
-    agent agent any
+    agent any
 
     environment {
         APP_DIR = "/var/www/html/innov360"
