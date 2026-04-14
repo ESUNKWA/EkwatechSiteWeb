@@ -5,6 +5,12 @@ pipeline {
         APP_DIR = "/var/www/html/innov360"
     }
 
+    stage('Debug Workspace') {
+        steps {
+            sh 'ls -R'
+        }
+    }
+
     stages {
 
         stage('Checkout') {
@@ -18,7 +24,7 @@ pipeline {
         stage('Install Dependencies') {
             steps {
                 sh '''
-                docker run --rm -v ${WORKSPACE}:/testlaravel -w /testlaravel composer:2 \
+                docker run --rm -v ${WORKSPACE}:/app -w /app composer:2 \
                 composer install --no-interaction --prefer-dist --optimize-autoloader
                 '''
             }
@@ -27,7 +33,7 @@ pipeline {
         stage('Setup Environment') {
             steps {
                 sh '''
-                docker run --rm -v ${WORKSPACE}:/testlaravel -w /testlaravel composer:2 \
+                docker run --rm -v ${WORKSPACE}:/app -w /app composer:2 \
                 php artisan key:generate || true
                 '''
             }
