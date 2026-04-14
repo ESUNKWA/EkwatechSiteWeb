@@ -19,10 +19,10 @@ pipeline {
             steps {
                 sh '''
                 docker run --rm \
-                -v ${WORKSPACE}:/ \
-                -w / \
+                -v /var/jenkins_home/workspace/testlaravel:/app \
+                -w /app \
                 composer:2 \
-                composer install --no-interaction --prefer-dist --optimize-autoloader
+                sh -c "ls -la /app && composer install --no-interaction --prefer-dist --optimize-autoloader"
                 '''
             }
         }
@@ -31,8 +31,8 @@ pipeline {
             steps {
                 sh '''
                 docker run --rm \
-                -v ${WORKSPACE}:/ \
-                -w / \
+                -v /var/jenkins_home/workspace/testlaravel:/app \
+                -w /app \
                 php:8.2-cli \
                 bash -c "
                     if [ ! -f .env ]; then
