@@ -6,6 +6,14 @@ pipeline {
     }
 
     stages {
+        stage('Debug Workspace') {
+    steps {
+        sh '''
+        echo "WORKSPACE = $WORKSPACE"
+        ls -la $WORKSPACE
+        '''
+    }
+}
 
         stage('Checkout') {
             steps {
