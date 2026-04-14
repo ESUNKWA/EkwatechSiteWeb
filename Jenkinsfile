@@ -1,10 +1,5 @@
 pipeline {
-    agent {
-        docker {
-            image 'composer:2'
-            args '-u root:root'
-        }
-    }
+    agent agent any
 
     environment {
         APP_DIR = "/var/www/html/innov360"
