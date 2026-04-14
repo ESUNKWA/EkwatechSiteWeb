@@ -17,7 +17,10 @@ pipeline {
 
         stage('Install Dependencies') {
             steps {
-                sh 'composer install --no-interaction --prefer-dist --optimize-autoloader'
+                sh '''
+                docker run --rm -v $PWD:/app -w /app composer:2 \
+                composer install --no-interaction --prefer-dist --optimize-autoloader
+                '''
             }
         }
 
