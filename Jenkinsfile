@@ -6,14 +6,7 @@ pipeline {
     }
 
     stages {
-        stage('Debug Workspace') {
-    steps {
-        sh '''
-        echo "WORKSPACE = $WORKSPACE"
-        ls -la $WORKSPACE
-        '''
-    }
-}
+        
 
         stage('Checkout') {
             steps {
@@ -24,16 +17,25 @@ pipeline {
         }
 
         stage('Install Dependencies') {
-            steps {
-                sh '''
-                docker run --rm \
-                -v $WORKSPACE:/app \
-                -w /app \
-                composer:2 \
-                composer install --no-interaction --prefer-dist --optimize-autoloader
-                '''
-            }
-        }
+    steps {
+        sh '''
+        set -e
+
+        echo "WORKSPACE: $WORKSPACE"
+        ls -la $WORKSPACE | head
+
+        docker run --rm \
+        -u $(id -u):$(id -g) \
+        -v $WORKSPACE:/app \
+        -w /app \
+        composer:2 \
+        composer install \
+        --no-interaction \
+        --prefer-dist \
+        --optimize-autoloader
+        '''
+    }
+}
 
         stage('Setup Environment') {
             steps {
