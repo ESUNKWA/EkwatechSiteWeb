@@ -5,13 +5,13 @@ pipeline {
         APP_DIR = "/var/www/html/innov360"
     }
 
-    stage('Debug Workspace') {
-        steps {
-            sh 'ls -R'
-        }
-    }
-
     stages {
+
+        stage('Debug Workspace') {
+            steps {
+                sh 'ls -R'
+            }
+        }
 
         stage('Checkout') {
             steps {
