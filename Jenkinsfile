@@ -13,8 +13,9 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                cleanWs()
-                git branch: 'main', url: 'https://github.com/ESUNKWA/innov360.git'
+                git credentialsId: 'github-token',
+                    branch: 'main',
+                    url: 'https://github.com/ESUNKWA/innov360.git'
             }
         }
 
@@ -65,7 +66,7 @@ pipeline {
             steps {
                 sshagent(['server-ssh']) {
                     sh """
-                    ssh -o StrictHostKeyChecking=no user@IP_SERVEUR '
+                    ssh -o StrictHostKeyChecking=no root@38.242.232.151 '
                         cd $APP_DIR &&
                         git pull origin main &&
                         composer install --no-interaction --prefer-dist --optimize-autoloader &&
@@ -81,7 +82,7 @@ pipeline {
             steps {
                 sshagent(['server-ssh']) {
                     sh '''
-                    ssh user@IP_SERVEUR "
+                    ssh root@38.242.232.151 "
                         sudo systemctl restart apache2
                     "
                     '''
