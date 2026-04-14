@@ -19,10 +19,10 @@ pipeline {
             steps {
                 sh '''
                 docker run --rm \
-                -v /var/jenkins_home/workspace/testlaravel:/app \
+                -v $WORKSPACE:/app \
                 -w /app \
                 composer:2 \
-                sh -c "ls -la /app && composer install --no-interaction --prefer-dist --optimize-autoloader"
+                composer install --no-interaction --prefer-dist --optimize-autoloader
                 '''
             }
         }
@@ -31,7 +31,7 @@ pipeline {
             steps {
                 sh '''
                 docker run --rm \
-                -v /var/jenkins_home/workspace/testlaravel:/app \
+                -v $WORKSPACE:/app \
                 -w /app \
                 php:8.2-cli \
                 bash -c "
@@ -47,15 +47,17 @@ pipeline {
         stage('Deploy to Server') {
             steps {
                 sshagent(['server-ssh']) {
-                    sh """
-                    ssh -o StrictHostKeyChecking=no root@ip
-                        cd $APP_DIR &&
-                        git pull origin main &&
+                    sh '''
+                    rsync -avz --delete $WORKSPACE/ root@IP:/var/www/html/innov360/
+
+                    ssh root@IP "
+                        cd /var/www/html/innov360 &&
                         composer install --no-interaction --prefer-dist --optimize-autoloader &&
                         php artisan migrate --force &&
-                        php artisan config:cache
-                    '
-                    """
+                        php artisan config:cache &&
+                        php artisan route:cache
+                    "
+                    '''
                 }
             }
         }
