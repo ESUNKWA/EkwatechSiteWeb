@@ -43,20 +43,20 @@
   <main class="main">
 
     <!-- Hero Section -->
-    <section id="accueil" class="hero section ">
+    <section id="accueil" class="hero section">
       <div class="hero-bg">
         <img src="{{asset('assets/img/it-consulting-2.webp') }}" alt="">
       </div>
       <div class="container text-center">
         <div class="d-flex flex-column justify-content-center align-items-center">
-          <h1 data-aos="fade-up">Bienvenue sur <span style="color: #f85858;" >Ekwatech-Polyvalent      </span></h1>
-          <p data-aos="fade-up" data-aos-delay="100">Votre partenaire digital<br></p>
-          <h4 class="w-bold mb-4"><span class="text-primary">IT Business </span> Solutions</h4>
-          {{-- <img src="{{asset('assets/img/') }}" class="img-fluid hero-img"
-           alt="" data-aos="zoom-out" data-aos-delay="300" style="height: 410px;" > --}}
+          <h1 data-aos="fade-up">Bienvenue sur <span style="color: #f85858;">Ekwatech-Polyvalent</span></h1>
+          <p data-aos="fade-up" data-aos-delay="100">Votre partenaire digital en <strong>IT Business Solutions</strong></p>
+          <div data-aos="fade-up" data-aos-delay="200" class="mt-3 d-flex gap-3 flex-wrap justify-content-center">
+            <a href="#contact" class="btn btn-primary px-4 py-2">Nous contacter</a>
+            <a href="#services" class="btn btn-outline-light px-4 py-2">Nos services</a>
+          </div>
         </div>
       </div>
-
     </section><!-- /Hero Section -->
 
     <!-- Featured Services Section -->

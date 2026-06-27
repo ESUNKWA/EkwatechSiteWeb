@@ -44,12 +44,23 @@
         </div><!-- End Service Item -->
 
         <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
-          <div class="service-item item-red position-relative">
+          <div class="service-item item-indigo position-relative">
             <i class="bi bi-envelope-at icon"></i>
             <div>
               <h3>Email professionnel</h3>
-              <p>Aider les entreprises à développer leur présence en ligne et à maximiser leur impact numérique.</p>
-              <a hidden href="#" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
+              <p>Mise en place et gestion d'adresses email professionnelles (@votreentreprise.com) pour renforcer la crédibilité et la communication de votre organisation.</p>
+              <a hidden href="#" class="read-more stretched-link">En savoir plus <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
+          <div class="service-item item-pink position-relative">
+            <i class="bi bi-bar-chart-line icon"></i>
+            <div>
+              <h3>Ekwatech Analytics</h3>
+              <p>Transformez vos données en décisions grâce à notre plateforme BI propulsée par Apache Superset — tableaux de bord interactifs, visualisations avancées et analyses en temps réel pour piloter votre activité.</p>
+              <a hidden href="#" class="read-more stretched-link">En savoir plus <i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
         </div>

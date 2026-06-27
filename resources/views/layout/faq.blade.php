@@ -55,11 +55,23 @@
             </div><!-- End Faq item-->
 
             <div class="faq-item ">
-                <h3><i class="bi bi-activity"></i></i>&nbsp; Dolibarr : Votre solution de gestion tout-en-un</h3>
+                <h3><i class="bi bi-activity"></i>&nbsp; Dolibarr : Votre solution de gestion tout-en-un</h3>
                 <div class="faq-content">
                     <p>
                       Dolibarr est un logiciel ERP & CRM open source qui simplifie la gestion de votre entreprise. Il regroupe dans un seul outil la gestion des clients, des factures, des stocks, des ventes, des achats, des projets et bien plus encore.
-                      Accessible et facile à utiliser, Dolibarr s’adapte aux besoins des TPE, PME, associations et indépendants pour piloter leur activité en toute sérénité.    
+                      Accessible et facile à utiliser, Dolibarr s’adapte aux besoins des TPE, PME, associations et indépendants pour piloter leur activité en toute sérénité.
+                    </p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+            </div><!-- End Faq item-->
+
+            <div class="faq-item">
+                <h3><i class="bi bi-bar-chart-line icon"></i>&nbsp; Ekwatech Analytics : Votre plateforme de Business Intelligence</h3>
+                <div class="faq-content">
+                    <p>
+                      Ekwatech Analytics est notre solution BI propulsée par Apache Superset, conçue pour transformer vos données brutes en insights actionnables.
+                      Créez des tableaux de bord interactifs, explorez vos données en temps réel et partagez des visualisations claires avec vos équipes pour des prises de décision plus rapides et mieux informées.
+                      Compatible avec la plupart des bases de données (MySQL, PostgreSQL, BigQuery, etc.), elle s’intègre facilement à votre système d’information existant.
                     </p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
