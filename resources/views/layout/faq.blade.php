@@ -158,7 +158,7 @@
               <li><i class="bi bi-check-circle-fill"></i> Contrôle des accès et partage collaboratif</li>
               <li><i class="bi bi-check-circle-fill"></i> Recherche avancée et interface intuitive</li>
             </ul>
-            <a href="https://smartdoc.ekwatech.com/login" target="_blank" rel="noopener" class="sol-cta">
+            <a href="https://smartdoc.ekwatech.com/landing" target="_blank" rel="noopener" class="sol-cta">
               Accéder à GedPro <i class="bi bi-arrow-right"></i>
             </a>
           </div>
