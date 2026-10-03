@@ -25,8 +25,13 @@ FROM php:8.2-apache
 WORKDIR /var/www/html
 
 # Extensions PHP nécessaires à Laravel
-RUN docker-php-ext-install \
-    pdo
+RUN apt-get update && apt-get install -y \
+    libzip-dev \
+    unzip \
+    && docker-php-ext-install \
+    pdo \
+    zip \
+    && rm -rf /var/lib/apt/lists/*
 
 # Activation du module Apache nécessaire à Laravel
 RUN a2enmod rewrite
