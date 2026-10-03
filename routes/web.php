@@ -15,6 +15,12 @@ use App\Http\Controllers\CustomerMessageController;
 |
 */
 
+Route::get('/health', function () {
+    return response()->json([
+        'status' => 'ok'
+    ]);
+});
+
 Route::get('/', function () {
     return view('master');
 });

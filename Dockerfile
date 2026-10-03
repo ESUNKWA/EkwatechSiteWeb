@@ -29,6 +29,7 @@ RUN apt-get update && apt-get install -y \
     libzip-dev \
     libpq-dev \
     unzip \
+    curl \
     && docker-php-ext-install \
     pdo \
     zip \
