@@ -27,10 +27,12 @@ WORKDIR /var/www/html
 # Extensions PHP nécessaires à Laravel
 RUN apt-get update && apt-get install -y \
     libzip-dev \
+    libpq-dev \
     unzip \
     && docker-php-ext-install \
     pdo \
     zip \
+    pdo_pgsql \
     && rm -rf /var/lib/apt/lists/*
 
 # Activation du module Apache nécessaire à Laravel
