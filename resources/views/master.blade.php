@@ -9,8 +9,8 @@
   <meta name="keywords" content="IT, logiciel, développement, BI, analytics, Côte d'Ivoire, Abidjan">
 
   <!-- Favicons -->
-  <link href="{{secure_url('assets/img/logo-transparent.png') }}" rel="icon">
-  <link href="{{secure_url('assets/img/apple-touch-icon.png') }}" rel="apple-touch-icon">
+  <link href="{{asset('assets/img/logo-transparent.png') }}" rel="icon">
+  <link href="{{asset('assets/img/apple-touch-icon.png') }}" rel="apple-touch-icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -18,14 +18,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Inter:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="{{secure_url('assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
-  <link href="{{secure_url('assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
-  <link href="{{secure_url('assets/vendor/aos/aos.css') }}" rel="stylesheet">
-  <link href="{{secure_url('assets/vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
-  <link href="{{secure_url('assets/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
+  <link href="{{asset('assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+  <link href="{{asset('assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+  <link href="{{asset('assets/vendor/aos/aos.css') }}" rel="stylesheet">
+  <link href="{{asset('assets/vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
+  <link href="{{asset('assets/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
 
   <!-- Main CSS File -->
-  <link href="{{secure_url('assets/css/main.css') }}" rel="stylesheet">
+  <link href="{{asset('assets/css/main.css') }}" rel="stylesheet">
 
   <style>
     /* ── Couleur de marque Ekwatech ── */
@@ -153,7 +153,7 @@
     <!-- Hero Section -->
     <section id="accueil" class="hero section dark-background">
       <div class="hero-bg">
-        <img src="{{secure_url('assets/img/it-consulting-2.webp') }}" alt="Ekwatech IT Solutions">
+        <img src="{{asset('assets/img/it-consulting-2.webp') }}" alt="Ekwatech IT Solutions">
       </div>
       <div class="container text-center">
         <div class="d-flex flex-column justify-content-center align-items-center">
@@ -229,13 +229,13 @@
   <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
-  <script src="{{secure_url('assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
-  <script src="{{secure_url('assets/vendor/aos/aos.js') }}"></script>
-  <script src="{{secure_url('assets/vendor/glightbox/js/glightbox.min.js') }}"></script>
-  <script src="{{secure_url('assets/vendor/swiper/swiper-bundle.min.js') }}"></script>
+  <script src="{{asset('assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+  <script src="{{asset('assets/vendor/aos/aos.js') }}"></script>
+  <script src="{{asset('assets/vendor/glightbox/js/glightbox.min.js') }}"></script>
+  <script src="{{asset('assets/vendor/swiper/swiper-bundle.min.js') }}"></script>
 
   <!-- Main JS File -->
-  <script src="{{secure_url('assets/js/main.js') }}"></script>
+  <script src="{{asset('assets/js/main.js') }}"></script>
 
 </body>
 
