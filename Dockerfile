@@ -20,7 +20,7 @@ RUN npm run build
 # STAGE 2 : Application Laravel
 # ==========================================================
 
-FROM php:8.2-apache
+FROM dunglas/frankenphp:1-php8.2-bookworm AS base
 
 WORKDIR /var/www/html
 
