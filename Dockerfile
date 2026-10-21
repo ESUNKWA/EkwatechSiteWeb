@@ -1,75 +1,29 @@
-# ==========================================================
-# STAGE 1 : Construction des assets frontend avec Vite
-# ==========================================================
-
+# STAGE 1 : assets Vite
 FROM node:20-alpine AS frontend
+WORKDIR /app
+COPY package*.json ./
+RUN npm ci
+COPY vite.config.js ./
+COPY resources ./resources
+RUN npm run build
+
+# STAGE 2 : Laravel avec FrankenPHP
+FROM dunglas/frankenphp:1-php8.2-bookworm
 
 WORKDIR /app
 
-COPY package*.json ./
+RUN install-php-extensions pdo_mysql zip
 
-RUN npm install
-
-COPY vite.config.js ./
-COPY resources ./resources
-
-RUN npm run build
-
-
-# ==========================================================
-# STAGE 2 : Application Laravel
-# ==========================================================
-
-FROM dunglas/frankenphp:1-php8.2-bookworm AS base
-
-WORKDIR /var/www/html
-
-# Extensions PHP nécessaires à Laravel
-RUN apt-get update && apt-get install -y \
-    libzip-dev \
-    libpq-dev \
-    unzip \
-    curl \
-    && docker-php-ext-install \
-    pdo \
-    zip \
-    pdo_pgsql \
-    && rm -rf /var/lib/apt/lists/*
-
-# Activation du module Apache nécessaire à Laravel
-RUN a2enmod rewrite
-
-# Installation de Composer
 COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
 
-# Copie du projet Laravel
 COPY . .
+RUN composer install --no-dev --optimize-autoloader --no-interaction
 
-# Installation des dépendances PHP
-RUN composer install \
-    --no-dev \
-    --optimize-autoloader \
-    --no-interaction
-
-# Copie des assets générés par Vite
 COPY --from=frontend /app/public/build ./public/build
 
-# Permissions nécessaires à Laravel
-RUN chown -R www-data:www-data \
-    storage \
-    bootstrap/cache
+RUN chown -R www-data:www-data storage bootstrap/cache
 
-# Configuration du DocumentRoot Apache
-ENV APACHE_DOCUMENT_ROOT=/var/www/html/public
-
-RUN sed -ri \
-    -e 's!/var/www/html!${APACHE_DOCUMENT_ROOT}!g' \
-    /etc/apache2/sites-available/*.conf \
-    /etc/apache2/apache2.conf \
-    /etc/apache2/conf-available/*.conf
-
-# Port HTTP du conteneur
+# Écoute en HTTP simple sur le port 80 (HTTPS géré en amont)
+ENV SERVER_NAME=:80
 EXPOSE 80
-
-# Démarrage d'Apache
-CMD ["apache2-foreground"]
+# Le CMD par défaut de l'image lance FrankenPHP, qui sert /app/public
